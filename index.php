@@ -17,7 +17,7 @@ if (isset ($_GET['page'])){
     <title>Dear</title>
 </head>
 <?php 
-if($file==".." or $file=="../" or $file=="test"){
+if($file==".." or $file=="../"){
     echo "<div class='alert alert-danger' role='alert'>
     Warning ! Tu fais des dingueries là !
   </div>";
