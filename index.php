@@ -67,7 +67,7 @@ $dirname = "Images/" . $file;
                 <h3 class="gallery-title">Top 3 des <?= $file ?></h3>
                 <div class="row">
                         <?php
-                        if(!empty($file) and $dossier = opendir($dirname))
+                        if(!empty($file) and $dossier = opendir($dirname) and $file!="..")
                         {while(false !== ($fichier = readdir($dossier)))
                             {if($fichier == 'FuckJerem' or $fichier == 'e91e6348157868de9dd8b25c81aebfb9' or 
                                 $fichier == 'FuckJerem.php' or $fichier == 'pass.php' or $fichier == 'pass3.txt' 
